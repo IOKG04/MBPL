@@ -1,0 +1,6 @@
+func Main(args ∈ [Strings]) ∈ ℕ -> {
+    input ∈ ℕ <- ℕ(args[0]) ;
+    while(input ≠ 0 ; print(input)) ;
+    print(input) ;
+    self <- input
+}

@@ -1,0 +1,10 @@
+func Factorial(number ∈ ℕ) ∈ ℕ -> {
+    self <- 1 ;
+    if(number = 1 ; self <- Factorial(number - 1))
+}
+
+func Main(args ∈ [Strings]) ∈ ℕ -> {
+    i ∈ ℕ <- ℕ(args[0]) ;
+    o ∈ ℕ <- Factorial(i) ;
+    self <- o
+}

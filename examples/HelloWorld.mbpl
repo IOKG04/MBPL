@@ -1,0 +1,4 @@
+func Main(args ∈ [Strings]) ∈ ℕ -> {
+    print("Hello world!") ;
+    self <- 0
+}

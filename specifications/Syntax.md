@@ -31,6 +31,7 @@ func ExampleFunction(input ∈ ℤ) ∈ ℤ -> {
 ```
 
 Every function returns a value which can be specified using `self <- [value]` where [value] is the return value  
+The value is returned after every statement is executed
 
 Named functions can be called using `[name]([arguments])` where [name] is the name of the function and [arguments] is the arguments given to the function  
 Anonymous functions can be called using `[definition]([arguments])` where [definition] is the definition of the function and [arguments] is the arguments given to the function  
@@ -75,6 +76,15 @@ If a set has multiple fields (like `StringIntegerPair` in the example) the separ
 Sets can only be global  
 
 ---
+## General syntax
+
+Statements and arguments are divided using ` ; `
+
+Statements can be grouped into a larger statements using `{ [...] }` where [...] are the separate statements
+
+Single line comments are indicated using `//` and multi line comments are started with `/*` and ended with `*/`
+
+---
 ## Given
 
 A few functions and sets are given by the programming language
@@ -85,18 +95,27 @@ A few functions and sets are given by the programming language
 `print(n ∈ ℤ) ∈ ℕ` appends the string representation of n to the standard output and returns 0 if successful (The same function exists for every other kind of number too)
 
 `if(condition ∈ Boolean ; s ∈ Statements) ∈ Boolean` executes s if condition is true and returns condition
+`while(condition ∈ Boolean ; s ∈ Statements) ∈ ℕ` executes s while condition is true and returns the number of times s was executed  
 
 `add(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the sum of a and b (The same function exists for every other kind of number too)  
 `subtract(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the difference between a and b (The same function exists for every other kind of number too)  
 `multiply(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the product of a and b (The same function exists for every other kind of number too)  
 `divide(a ∈ ℤ ; b ∈ ℤ) ∈ ℚ` returns the quotient of a and b (The same function exists for every other kind of number too)
 
+`equal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is equal to b (The same function exists for every other kind of given set too)  
+`notequal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is not equal to b (The same function exists for every other kind of given set too)  
+`greater(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is greater than b (The same function exists for every other kind of number too)  
+`greaterequal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is greater than or equal to b (The same function exists for every other kind of number too)  
+`less(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is less than b (The same function exists for every other kind of number too)  
+`lessequal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is less than or equal to b (The same function exists for every other kind of number too)
+
 `not(b ∈ Boolean) ∈ Boolean` returns true if b is false and false if b is true  
 `and(a ∈ Boolean ; b ∈ Boolean) ∈ Boolean` returns true if a and b are true and false otherwise  
 `or(a ∈ Boolean ; b ∈ Boolean) ∈ Boolean` returns true if either a or b are true and false otherwise 
 
 `ℤ(s ∈ Strings) ∈ ℤ` returns the integer of s (The same function exists for every other kind of number too)  
-`ℤ(n ∈ ℝ) ∈ ℤ` returns the integer of n (The same function exists for every other kind of number too) 
+`ℤ(n ∈ ℝ) ∈ ℤ` returns the integer of n (The same function exists for every other kind of number too)  
+`Strings(n ∈ ℤ) ∈ Strings` returns the string representation of n (The same function exists for every other kind of number too)
 
 ### Given sets
 
@@ -122,6 +141,13 @@ Some functions can be shortened to a character:
 `subtract(a ∈ [t] ; b ∈ [t]) ∈ [t]` where [t] is a set can be shortened to `a - b`  
 `multiply(a ∈ [t] ; b ∈ [t]) ∈ [t]` where [t] is a set can be shortened to `a * b`  
 `divide(a ∈ [t] ; b ∈ [t]) ∈ [t]` where [t] is a set can be shortened to `a / b`
+
+`equal(a ∈ [t] ; b ∈ [t]) ∈ Boolean` where [t] is a set can be shortened to `a = b`  
+`notequal(a ∈ [t] ; b ∈ [t]) ∈ Boolean` where [t] is a set can be shortened to `a ≠ b`  
+`greater(a ∈ [t] ; b ∈ [t]) ∈ Boolean` where [t] is a set can be shortened to `a > b`  
+`greaterequal(a ∈ [t] ; b ∈ [t]) ∈ Boolean` where [t] is a set can be shortened to `a ≥ b`  
+`less(a ∈ [t] ; b ∈ [t]) ∈ Boolean` where [t] is a set can be shortened to `a < b`  
+`lessequal(a ∈ [t] ; b ∈ [t]) ∈ Boolean` where [t] is a set can be shortened to `a ≤ b`
 
 `not(b ∈ [t]) ∈ [t]` where [t] is a set can be shortened to `¬b`  
 `and(a ∈ [t] ; b ∈ [t]) ∈ [t]` where [t] is a set can be shortened to `a & b`  

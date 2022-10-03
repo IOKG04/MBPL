@@ -1,0 +1,14 @@
+func Main(args ∈ [Strings]) ∈ ℕ -> {
+    n1 ∈ ℕ <- 1 ;
+    n2 ∈ ℕ <- 1 ;
+    n3 ∈ ℕ ;
+
+    while(true ; {
+	print(n1) ;
+	n3 <- n1 + n2 ;
+	n2 <- n1 ;
+	n1 <- n3
+    }) ;
+
+    self <- 0
+}
