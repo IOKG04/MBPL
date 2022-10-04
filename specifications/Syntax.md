@@ -98,31 +98,31 @@ A few functions and sets are given by the programming language
 
 ### Given functions
 
-`print(s ∈ Strings) ∈ ℕ` appends s to the standard output and returns 0 if successful  
-`print(n ∈ ℤ) ∈ ℕ` appends the string representation of n to the standard output and returns 0 if successful (The same function exists for every other kind of number too)
+`print(s ∈ Strings) ∈ ℕ` appends `s` to the standard output and returns 0 if successful  
+`print(n ∈ ℤ) ∈ ℕ` appends the string representation of `n` to the standard output and returns 0 if successful (The same function exists for every other kind of number too)
 
-`if(condition ∈ Boolean ; s ∈ Statements) ∈ Boolean` executes s if condition is true and returns condition  
-`while(condition ∈ Boolean ; s ∈ Statements) ∈ ℕ` executes s while condition is true and returns the number of times s was executed  
+`if(condition ∈ Boolean ; s ∈ Statements) ∈ Boolean` executes `s` if condition is true and returns `condition`  
+`while(condition ∈ Boolean ; s ∈ Statements) ∈ ℕ` executes `s` while condition is true and returns the number of times s was executed  
 
-`add(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the sum of a and b (The same function exists for every other kind of number too)  
-`subtract(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the difference between a and b (The same function exists for every other kind of number too)  
-`multiply(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the product of a and b (The same function exists for every other kind of number too)  
-`divide(a ∈ ℤ ; b ∈ ℤ) ∈ ℚ` returns the quotient of a and b (The same function exists for every other kind of number too)
+`add(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the sum of `a` and `b` (The same function exists for every other kind of number too)  
+`subtract(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the difference between `a` and `b` (The same function exists for every other kind of number too)  
+`multiply(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the product of `a` and `b` (The same function exists for every other kind of number too)  
+`divide(a ∈ ℤ ; b ∈ ℤ) ∈ ℚ` returns the quotient of `a` and `b` (The same function exists for every other kind of number too)
 
-`equal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is equal to b (The same function exists for every other kind of given set too)  
-`notequal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is not equal to b (The same function exists for every other kind of given set too)  
-`greater(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is greater than b (The same function exists for every other kind of number too)  
-`greaterequal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is greater than or equal to b (The same function exists for every other kind of number too)  
-`less(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is less than b (The same function exists for every other kind of number too)  
-`lessequal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if a is less than or equal to b (The same function exists for every other kind of number too)
+`equal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if `a` is equal to `b` (The same function exists for every other kind of given set too)  
+`notequal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if `a` is not equal to `b` (The same function exists for every other kind of given set too)  
+`greater(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if `a` is greater than `b` (The same function exists for every other kind of number too)  
+`greaterequal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if `a` is greater than or equal to `b` (The same function exists for every other kind of number too)  
+`less(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if `a` is less than `b` (The same function exists for every other kind of number too)  
+`lessequal(a ∈ ℤ ; b ∈ ℤ) ∈ Boolean` returns true if `a` is less than or equal to `b` (The same function exists for every other kind of number too)
 
-`not(b ∈ Boolean) ∈ Boolean` returns true if b is false and false if b is true  
-`and(a ∈ Boolean ; b ∈ Boolean) ∈ Boolean` returns true if a and b are true and false otherwise  
-`or(a ∈ Boolean ; b ∈ Boolean) ∈ Boolean` returns true if either a or b are true and false otherwise 
+`not(b ∈ Boolean) ∈ Boolean` returns true if `b` is false and false if `b` is true  
+`and(a ∈ Boolean ; b ∈ Boolean) ∈ Boolean` returns true if `a` and `b` are true and false otherwise  
+`or(a ∈ Boolean ; b ∈ Boolean) ∈ Boolean` returns true if either `a` or `b` are true and false otherwise 
 
-`ℤ(s ∈ Strings) ∈ ℤ` returns the integer of s (The same function exists for every other kind of number too)  
-`ℤ(n ∈ ℝ) ∈ ℤ` returns the integer of n (The same function exists for every other kind of number too)  
-`Strings(n ∈ ℤ) ∈ Strings` returns the string representation of n (The same function exists for every other kind of number too)
+`ℤ(s ∈ Strings) ∈ ℤ` returns the integer of `s` (The same function exists for every other kind of number too)  
+`ℤ(n ∈ ℝ) ∈ ℤ` returns the integer of `n` (The same function exists for every other kind of number too)  
+`Strings(n ∈ ℤ) ∈ Strings` returns the string representation of `n` (The same function exists for every other kind of number too)
 
 ### Given sets
 
