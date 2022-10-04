@@ -5,7 +5,7 @@ func Mod(a ∈ ℕ ; b ∈ ℕ) ∈ ℕ -> {
 
 func Even(num ∈ ℕ) ∈ Boolean -> {
     self <- False ;
-    if(Mod(num ; 2) ; self <- True)
+    if(Mod(num ; 2) = 0 ; self <- True)
 }
 
 func Main(args ∈ [Strings]) ∈ ℕ -> {
