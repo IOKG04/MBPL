@@ -1,0 +1,13 @@
+func Mod(a \e \n ; b \e \n) \e \n ->{
+    while(a >= b ; a <- a - b) ;
+    self <- a
+}
+
+func Even(num \e \n) \e Boolean -> {
+    self <- False ;
+    if(Mod(num ; 2) ; self <- True)
+}
+
+func Main(args \e [Strings]) \e \n -> {
+    if(\!if(Even(\n(args[0])) ; self <- 1) ; self <- 0)
+}
