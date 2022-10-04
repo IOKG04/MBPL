@@ -101,7 +101,7 @@ A few functions and sets are given by the programming language
 `print(s ∈ Strings) ∈ ℕ` appends s to the standard output and returns 0 if successful  
 `print(n ∈ ℤ) ∈ ℕ` appends the string representation of n to the standard output and returns 0 if successful (The same function exists for every other kind of number too)
 
-`if(condition ∈ Boolean ; s ∈ Statements) ∈ Boolean` executes s if condition is true and returns condition
+`if(condition ∈ Boolean ; s ∈ Statements) ∈ Boolean` executes s if condition is true and returns condition  
 `while(condition ∈ Boolean ; s ∈ Statements) ∈ ℕ` executes s while condition is true and returns the number of times s was executed  
 
 `add(a ∈ ℤ ; b ∈ ℤ) ∈ ℤ` returns the sum of a and b (The same function exists for every other kind of number too)  
