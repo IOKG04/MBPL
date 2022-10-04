@@ -9,5 +9,9 @@ func Even(num ∈ ℕ) ∈ Boolean -> {
 }
 
 func Main(args ∈ [Strings]) ∈ ℕ -> {
-    if(¬if(Even(ℕ(args[0])) ; self <- 1) ; self <- 0)
+    if(
+        ¬if(
+            Even(ℕ(args[0])) ;
+        self <- 1) ;
+    self <- 0)
 }
