@@ -65,15 +65,22 @@ Sets are value types functions can return, functions can take as arguments and v
 [...] is replaced with the specification of the set  
 
 ```
+Radian -> {
+    value ∈ ℝ ;
+    greaterequal(value ; 0) ;
+    lessequal(value ; π)
+}
+
 StringIntegerPair -> {
     string ∈ Strings ;
     integer ∈ ℤ
 }
 ```
 
-If a set has multiple fields (like `StringIntegerPair` in the example) the separate fields can be accessed using `[name].[field name]` where [name] is the name of the variable or function and [field name] is the name of the field in the set
+If a set has multiple fields (like `StringIntegerPair` in the example) the separate fields can be accessed using `[name].[field name]` where [name] is the name of the variable or function and [field name] is the name of the field in the set  
+Sets can have functions returning a Boolean as a limitation (like `Radian` in the example)
 
-Sets can only be global  
+Sets can only be global
 
 ---
 ## General syntax
