@@ -1,4 +1,4 @@
-func Mod(a ∈ ℕ ; b ∈ ℕ) ∈ ℕ ->{
+func Mod(a ∈ ℕ ; b ∈ ℕ) ∈ ℕ -> {
     while(a ≥ b ; a <- a - b) ;
     self <- a
 }
